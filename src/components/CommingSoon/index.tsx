@@ -1,9 +1,8 @@
 import React from "react";
-import Breadcrumb from "../Common/Breadcrumb";
 import Link from "next/link";
 import Image from "next/image";
 
-const Error = () => {
+const CommingSoon = () => {
   return (
     <>
       <section className="overflow-hidden py-20 bg-gray-2">
@@ -11,20 +10,28 @@ const Error = () => {
           <div className="bg-white rounded-xl shadow-1 px-4 py-10 sm:py-15 lg:py-20 xl:py-25">
             <div className="text-center">
               <Image
+                src="/images/logo/logo.webp"
+                alt="main Logo"
+                width={288}
+                height={114}
+                className="mx-auto w-1/2 sm:w-auto"
+                />
+              
+              <Image
                 src="/images/404.svg"
                 alt="404"
-                className="mx-auto mb-8 w-1/2 sm:w-auto"
+                className="mx-auto w-1/2 sm:w-auto"
                 width={288}
                 height={190}
               />
 
+
               <h2 className="font-medium text-dark text-xl sm:text-2xl mb-3">
-                Sorry, the page can’t be found
+                We're Almost Ready🚀
               </h2>
 
               <p className="max-w-[410px] w-full mx-auto mb-7.5">
-                The page you were looking for appears to have been moved,
-                deleted or does not exist.
+                Our team is working hard to bring you an experience that's simple, powerful, and built with purpose. We can't wait to show you what  we've been building.
               </p>
 
               <Link
@@ -46,6 +53,8 @@ const Error = () => {
                 </svg>
                 Back to Home
               </Link>
+              
+
             </div>
           </div>
         </div>
@@ -54,4 +63,4 @@ const Error = () => {
   );
 };
 
-export default Error;
+export default CommingSoon;
